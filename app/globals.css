@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 5 6 15;
+  --foreground: 226 232 240;
+}
+
+body {
+  background-color: #05060f;
+  color: #e2e8f0;
+  background-image: radial-gradient(ellipse at top, #1e1b4b 0%, #05060f 60%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(34, 211, 238, 0.5);
+  }
+  .card-glow {
+    box-shadow: 0 0 30px rgba(124, 58, 237, 0.15);
+  }
+}
